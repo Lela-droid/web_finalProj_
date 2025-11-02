@@ -14,5 +14,5 @@ Working Individually
 
 ## Do you have any questions of your own?
 
-I feel like I don't have good projects to showcase nor certifications. So it feels like the portfolio will be very bone structure with nothing really to fill it so I wonder if you still recommend it and what other things you recommend to showcase?	
+I feel like I don't have good projects to showcase nor certifications. So it feels like the portfolio will be very bone structure with nothing really to fill it so I wonder if you still recommend it and what other things you recommend to showcase?	{If this is a better route to go.}
 
