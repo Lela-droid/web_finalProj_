@@ -2,8 +2,7 @@
 
 ## What idea(s) do you have for your final project?
 
-For my final project, I am considering creating an identity based habit tracking website. The purpose of the site is to support personal growth through weekly routines, reflection and consistency. The website will have a welcoming page introducing the concept of identity-based habit building, a weekly habit or identity hours tracker, a reflection page with saveable entries, a progress indicator. The Identity based habit tracker is based on the 75 hard, the only difference is that it is not as rigid
-
+For my final project, i want to build a  “Butterfly Habit Tracker” website to support weekly consistency. Users will be able to enter their weekly tasks, check them off as they complete them, and once all tasks for the week are finished, I would like to add a small animation of the butterfly if possible. Each completed week will also earn the user a digital butterfly that gets added to a “Butterfly Garden” collection page, to represent their progress over time.
 
 
 My second idea is a cybersecurity portfolio in which I can showcase my technical skills, learning journey, completed projects, and project ideas. So there will be sections for projects, skills, certification or coursework, and an introduction. It would seve as a space to showcase what I've learned and learning. 
