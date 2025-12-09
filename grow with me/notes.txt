@@ -1,0 +1,98 @@
+GROW WITH ME — PROJECT NOTES & VISION LOG
+==========================================
+
+Using this file to document plans, design choices, references, and ideas for the  "Grow With Me" project. This is our shared space to keep track of changes we’ve made, things we want to try, problems we run into, and future ideas.
+
+We will update this as we go.
+
+------------------------------------------------------------
+1. ORIGINAL SOURCE CODE (BASELINE)
+------------------------------------------------------------
+
+We started this project using the following tutorial and code:
+
+Ade-mir. "How to Create a To Do List App Using HTML CSS JavaScript." YouTube. https://www.youtube.com/watch?v=3OqWCGVaOkA
+
+Ade-mir. To-Do-List-Tutorial GitHub Repo. https://github.com/Ade-mir/To-Do-List-Tutorial
+
+Our HTML, CSS, and JS originally came from this tutorial. We are customizing it to turn it into our own vision.
+
+------------------------------------------------------------
+2. VISUAL IDEAS + STYLE DISCUSSION
+------------------------------------------------------------
+
+- The existing gradient in style.css actually works well for the “whimsical” vibe.
+- Thinking: magical / fantasy / soft pastel theme (baby blue, lavender, pink).
+  - (Lela) → These colors fit the butterfly reward idea.
+- Add a navigation bar so users can go to different sections (tracker, about, garden).
+  - (Adama) → Progress bar might look good aligned next to the “My Tasks” title.
+- Accessibility reminder: make sure fonts are readable, maybe add toggles later.
+- Long-term: users can be able to choose different reward themes (not just butterflies).
+
+------------------------------------------------------------
+3. FEATURES WE WANT (IN ORDER)
+------------------------------------------------------------
+
+1. **Personalize styling**
+   - Adjust colors 
+   -- DONE
+
+2. **Navigation Bar**
+   - tracker (current page)
+   - about (names + year → required for final project)
+   - garden (collection page)
+   We used the horizontal navbar example from W3Schools as the base structure (https://www.w3schools.com/css/css_navbar_horizontal.asp). We kept the same basic <ul><li><a> layout from their tutorial, then customized the colors, blur effect, and rounded corners to match current theme.
+   --DONE
+
+3. **Progress Bar**
+   - we want the progress bar to fill up based on task completion
+   - progress bar on w3 seems to be formatted based on button, need it to be based on percentage (done/total)
+   We used the animated progress bar tutorial from W3Schools as our starting point (https://www.w3schools.com/howto/howto_js_progressbar.asp). To make the bar work like we wanted we create a function that takes the total number of tasks, how many have been done and calculates the percentage, then changes the width of the progress bar based on the calculation. We invoke the function every time a task is added, checked, unchecked, or deleted which connects the progress bar directly to the to-do list instead of a button trigger.
+   --DONE
+
+4. **Reward animation**
+   - Popup modal when all tasks are completed.
+   - Text: something like “You got a new butterfly! Check your garden.”
+   - Could use GIFs for the reward.
+   We used a mix of W3Schools modal/popup examples and a GIF tutorial to build the reward popup. The behavior of opening and closing the popup comes from the W3Schools popup chat and image modal tutorials (https://www.w3schools.com/howto/howto_js_popup_chat.asp and https://www.w3schools.com/howto/howto_css_modal_images.asp). We changed the styling to match our theme and placed a butterfly GIF inside using the “how to add GIF in HTML” idea from GeeksforGeeks (https://www.geeksforgeeks.org/html/how-to-add-gif-in-html/). The modal is connected to the progress bar: when the percentage reaches 100% (all tasks are done), we call a function to show the popup one time as a reward.
+   --DONE
+
+5. **Garden Page (Collection)**
+   - A display area showing collected butterflies (or future rewards).
+   - Need to plan the layout:
+       - cards?
+       -- cards that flip over and tell you the type of butterfly.
+       - grid?
+       -- we can do a mockup of 10 grids/cards without creating a new page yet, just to see the logic and layout.
+       -- we'll need ~10 photos of different butterflies, basic info like its name, what it’s known for, and maybe a small quote for motivation.
+       - small icons?
+   - Decide if the collection is on its own page or same page scroll section.
+
+   For the garden layout, we are planning to use a mix of W3Schools card and layout examples as our base. 
+   For the butterfly “cards that flip,” we’re looking at the flip card tutorial 
+   (https://www.w3schools.com/howto/howto_css_flip_card.asp). For the basic card styling and 
+   clean containers, we’re referencing the card examples 
+   (https://www.w3schools.com/howto/howto_css_cards.asp and 
+   https://www.w3schools.com/howto/howto_css_column_cards.asp). For arranging multiple cards 
+   in rows/columns (like a small 2x5 or 3x4 grid), we’re using the side-by-side images/layout 
+   ideas from W3Schools (https://www.w3schools.com/howto/howto_css_images_side_by_side.asp). 
+   The plan is to adapt these layouts to fit our pastel theme and turn each card into a butterfly 
+   “entry” that can flip to show the name, what it’s known for, and a short motivational quote.
+   --IN PROGRESS
+
+
+6. **Future idea**
+   - Let users choose reward type: butterflies, desserts, candies, cars, flowers, crystals, etc.
+   - Focus on completing butterfly collection first before adding more.
+
+------------------------------------------------------------
+4. QUESTIONS / THINGS TO FIGURE OUT
+------------------------------------------------------------
+
+- How will rewards be stored to show when its unlocked?
+- Do we want animated GIFs or static PNG rewards?
+- Should the garden page show locked vs. unlocked items?
+
+------------------------------------------------------------
+(We will keep adding to this file as the project develops.)
+------------------------------------------------------------

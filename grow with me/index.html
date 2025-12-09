@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<!--Base HTML structure adapted from Ade-mir,
+  "How to Create a To Do List App Using HTML CSS JavaScript" (YouTube)
+  and the accompanying GitHub repository: To-Do-List-Tutorial.
+  Customized by [Lela and Adama] for the "Grow With Me" project.
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <title>Grow With Me</title>
+  </head>
+
+  <body>
+    <ul class="navbar">
+      <li class="nav-title">Grow With Me</li>
+      <li><a class="active" href="#tracker">Tracker</a></li>
+      <li><a href="#garden">Garden</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+
+    <section class="todo" id="tracker">
+      <h2>My Tasks</h2>
+
+      <div class="progress-wrapper">
+        <div id="taskProgressBar" class="progress-bar"></div>
+      </div>
+
+      <div class="input">
+        <input
+          type="text"
+          class="input-field"
+          id="todoInput"
+          placeholder="Write a task..."
+        />
+        <button class="btn">Add</button>
+      </div>
+
+      <ul id="todoList" class="scroll"></ul>
+
+      <div>
+        <hr class="counter" />
+        <div class="counter-container">
+          <p><span id="todoCount">0</span> Total</p>
+          <button id="deleteButton">Delete All</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="garden" class="section-placeholder">
+      <h3>Garden – Butterfly Collection (Mockup)</h3>
+      <p>
+        This is a preview of how collected butterflies could appear as cards
+        in the future collection page.
+      </p>
+
+      <div class="garden-grid">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="card-tag">#01</div>
+              <p class="card-name">Blue Morpho</p>
+            </div>
+            <div class="flip-card-back">
+              <p class="card-name">Blue Morpho</p>
+              <p class="card-info">Known for bright iridescent blue wings.</p>
+              <p class="card-quote">“Growth takes time, just like wings.”</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="card-tag">#02</div>
+              <p class="card-name">Monarch</p>
+            </div>
+            <div class="flip-card-back">
+              <p class="card-name">Monarch</p>
+              <p class="card-info">Famous for long-distance migrations.</p>
+              <p class="card-quote">“Keep moving, even in small steps.”</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="card-tag">#03</div>
+              <p class="card-name">Swallowtail</p>
+            </div>
+            <div class="flip-card-back">
+              <p class="card-name">Swallowtail</p>
+              <p class="card-info">Recognizable by their tail-like wings.</p>
+              <p class="card-quote">“Little details make you unique.”</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="card-tag">#04</div>
+              <p class="card-name">Painted Lady</p>
+            </div>
+            <div class="flip-card-back">
+              <p class="card-name">Painted Lady</p>
+              <p class="card-info">Seen almost everywhere in the world.</p>
+              <p class="card-quote">“You belong more than you think.”</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section-placeholder">
+      <h3>About</h3>
+      <p>Created by Lela &amp; Adama, [Year].</p>
+      <p>
+        This project was built as a reward-based task tracker meant to motivate
+        users through a whimsical and gentle UI experience.
+      </p>
+    </section>
+
+    <div id="rewardModal" class="reward-modal">
+      <div class="reward-modal-content">
+        <span class="close-btn">&times;</span>
+        <p>
+          All tasks completed! There's been an addition to your garden.
+          Please check your collection.
+        </p>
+        <img
+          src="purple.gif"
+          alt="Butterfly reward"
+          class="reward-gif"
+        />
+        <button class="reward-ok">Okay!</button>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <p class="made-by">Made By</p>
+        <p class="author">Lela &amp; Adama</p>
+      </div>
+    </footer>
+  </body>
+</html>
